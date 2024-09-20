@@ -1,18 +1,18 @@
 .name-container {
   display: flex;
-  width: 50%;
-  justify-content: space-between; 
-  margin: 0 auto;
-  
+  flex-direction: row;
+  column-gap: 100px;
 }
 
 .form-name {
-  display: flex;
-  flex-direction: column;
+  
 }
 
 body {
- text-align: center; 
- width: 50vw;
- margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-container {
 }
