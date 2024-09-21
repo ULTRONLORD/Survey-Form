@@ -10,7 +10,7 @@
   <body>
     <h1>Departmental Survey Form</h1>
 
-    <form id="form">
+    <form id="form1">
       <div class="name-container">
         <div class="form-name first">
           <label for="first-name"> First name</label>
@@ -103,6 +103,16 @@
           <input type="checkbox" id="java" name="frameworks" value="java" />
           <label for="java"> Java</label>
         </div>
+
+        <div class="comments-container">
+          <label for="comments"
+            >Any comments or suggestions to enhance the department
+          </label>
+          <textarea id="comments"> </textarea>
+        </div>
+      </div>
+      <div class="submit-container">
+        <button type="submit" form="form1" value="submit">Submit</button>
       </div>
     </form>
   </body>

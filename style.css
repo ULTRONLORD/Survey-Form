@@ -18,6 +18,16 @@ body {
 .email-container {
 }
 
+.comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+}
+
 input[type="email"],select[name="level"],select[name="field"] {
   width: 100%;
 }
