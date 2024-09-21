@@ -5,7 +5,8 @@
 }
 
 .form-name {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -15,4 +16,8 @@ body {
 }
 
 .email-container {
+}
+
+input[type="email"],select[name="level"],select[name="field"] {
+  width: 100%;
 }

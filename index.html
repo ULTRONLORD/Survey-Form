@@ -14,20 +14,96 @@
       <div class="name-container">
         <div class="form-name first">
           <label for="first-name"> First name</label>
-          <input type="text" id="first-name" />
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Enter your first name"
+          />
         </div>
 
         <div class="form-name last">
           <label for="last-name"> Last name</label>
-          <input type="text" id="last-name"
-        </div>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Enter your last name"
+          />
         </div>
       </div>
 
       <div class="email-container">
         <label>Student email</label>
-            <input type="email" id=""
+        <input type="email" id="email" placeholder="Enter your email" />
       </div>
-    </form> 
+
+      <label for="level">Select your Level:</label>
+      <select name="level" id="level">
+        <option value="">Select your current Level</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+      </select>
+
+      <label for="field">Pick your field of interest</label>
+      <select name="field" id="field">
+        <option value="">Pick a field</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Mobile Development">Mobile Development</option>
+        <option value="Game Development">Game Development</option>
+        <option value="UI/UX">UI/UX</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Networking">Networking</option>
+      </select>
+
+      <div>
+        <h2>Languages and Frameworks you know well</h2>
+
+        <div>
+          <input type="checkbox" id="C" name="frameworks" value="C" />
+          <label for="C"> C </label>
+        </div>
+        <div>
+          <div>
+            <input type="checkbox" id="c++" name="frameworks" value="c++" />
+            <label for="c++"> C++ </label>
+          </div>
+          <input type="checkbox" id="python" name="frameworks" value="python" />
+          <label for="python"> Python </label>
+        </div>
+        <div>
+          <input type="checkbox" id="C`" name="frameworks" value="C#" />
+          <label for="C#"> C#</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="HTML/CSS"
+            name="frameworks"
+            value="HTML/CSS"
+          />
+          <label for="HTML/CSS">HTML/CSS</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="javasscript"
+            name="frameworks"
+            value="javasscript"
+          />
+          <label for="javasscript"> Javasscript</label>
+        </div>
+        <div>
+          <input type="checkbox" id="SQL" name="frameworks" value="SQL" />
+          <label for="SQL"> SQL</label>
+        </div>
+        <div>
+          <input type="checkbox" id="java" name="frameworks" value="java" />
+          <label for="java"> Java</label>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
