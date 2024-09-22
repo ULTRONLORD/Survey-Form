@@ -18,6 +18,8 @@
             type="text"
             id="first-name"
             placeholder="Enter your first name"
+            name="first-name"
+            value=""
           />
         </div>
 
@@ -27,13 +29,21 @@
             type="text"
             id="last-name"
             placeholder="Enter your last name"
+            name="last-name"
+            value=""
           />
         </div>
       </div>
 
       <div class="email-container">
         <label>Student email</label>
-        <input type="email" id="email" placeholder="Enter your email" />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value=""
+          placeholder="Enter your email"
+        />
       </div>
 
       <div>
@@ -113,7 +123,7 @@
         <label for="comments">
           Any comments or suggestions to enhance the department
         </label>
-        <textarea id="comments" name="comments">  </textarea>
+        <textarea id="comments" name="comments"> </textarea>
       </div>
 
       <div class="submit-container">
