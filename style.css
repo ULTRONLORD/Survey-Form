@@ -23,6 +23,8 @@ textarea {
   border-radius: 15px;
   box-shadow: inset 0 -3em 3em rgb(0 200 0 / 30%),
     0.3em 0.3em 1em rgb(200 0 0 / 60%);
+
+  background-color: blanchedalmond;
 }
 
 .form-name {
@@ -34,8 +36,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: khaki;
-  background-image: url(..);
+  background-image: url("./photos/sample3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
 }
 
 .email-container {
@@ -44,6 +48,7 @@ body {
 .comments-container {
   display: flex;
   flex-direction: column;
+  row-gap: 5px;
 }
 
 .submit-container {
