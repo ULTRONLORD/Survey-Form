@@ -61,3 +61,16 @@ select[name="level"],
 select[name="field"] {
   width: 100%;
 }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 450px) {
+  #form1 {
+    background-color: red;
+    /* width: 100%; */
+  }
+
+  body {
+    padding: 0 2rem;
+    max-width: 100vw;
+  }
+}
