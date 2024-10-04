@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 .name-container {
   display: flex;
   flex-direction: row;
@@ -33,18 +31,19 @@ textarea {
 .form-name {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('./photos/sample3.jpg');
+  background-image: url("./photos/sample3.jpg");
   background-repeat: no-repeat;
   background-attachment: initial;
   background-size: cover;
-  font-family: 'Inter', system-ui;
+}
+
+.email-container {
 }
 
 .comments-container {
@@ -58,77 +57,22 @@ body {
   flex-direction: column;
 }
 
-input[type='email'],
-select[name='level'],
-select[name='field'] {
+input[type="email"],
+select[name="level"],
+select[name="field"] {
   width: 100%;
-  margin-top: 0.5rem;
 }
 
 /* Mobile Responsiveness */
-/* 
-  These styles will take effect when the screen's width
-  is less than or equal 760 pixels.
-*/
-@media screen and (max-width: 760px) {
-  /* 
-    Place the header (Departmental Survey Form) 
-    in the center of the page.
-  */
-  body > h1 {
-    text-align: center;
+@media screen and (max-width: 450px) {
+  #form1 {
+    background-color: red;
+    /* width: 100%; */
   }
 
-  /* 
-    Make the first name & last name inputs
-    stack vertically on top of each other.
-  */
-  .name-container {
-    flex-direction: column;
-    row-gap: 1rem;
-  }
-
-  /* 
-    Give the body element some inner space (padding) so
-    that the form doesn't touch the edge of the screen.
-  */
   body {
-    padding: 0 0.7rem;
+    padding: 0 2rem;
+    max-width: 100vw;
   }
 }
 
-.btn {
-  width: 450px;
-  height: 40px;
-  cursor: pointer;
-  background: tan;
-  border: 1px solid black;
-  outline: none;
-  transition: 1s ease-in-out;
-}
-
-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: black;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 0.5s ease-in-out;
-}
-
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: grey;
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  color: black;
-  font-size: 18px;
-  font-weight: 100;
-}
