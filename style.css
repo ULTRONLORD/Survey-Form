@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .name-container {
   display: flex;
   flex-direction: row;
@@ -31,19 +33,18 @@ textarea {
 .form-name {
   display: flex;
   flex-direction: column;
+  row-gap: 0.5rem;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./photos/sample3.jpg");
+  background-image: url('./photos/sample3.jpg');
   background-repeat: no-repeat;
   background-attachment: initial;
   background-size: cover;
-}
-
-.email-container {
+  font-family: 'Inter', system-ui;
 }
 
 .comments-container {
@@ -57,22 +58,42 @@ body {
   flex-direction: column;
 }
 
-input[type="email"],
-select[name="level"],
-select[name="field"] {
+input[type='email'],
+select[name='level'],
+select[name='field'] {
   width: 100%;
+  margin-top: 0.5rem;
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 450px) {
-  #form1 {
-    background-color: red;
-    /* width: 100%; */
+/* 
+  These styles will take effect when the screen's width
+  is less than or equal 760 pixels.
+*/
+@media screen and (max-width: 760px) {
+  /* 
+    Place the header (Departmental Survey Form) 
+    in the center of the page.
+  */
+  body > h1 {
+    text-align: center;
   }
 
+  /* 
+    Make the first name & last name inputs
+    stack vertically on top of each other.
+  */
+  .name-container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  /* 
+    Give the body element some inner space (padding) so
+    that the form doesn't touch the edge of the screen.
+  */
   body {
-    padding: 0 2rem;
-    max-width: 100vw;
+    padding: 0 0.7rem;
   }
 }
 
